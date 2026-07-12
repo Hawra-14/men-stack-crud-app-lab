@@ -1,0 +1,25 @@
+<%- include('./partials/nav') %>
+
+
+    <h1>Edit a book</h1>
+    <form action="/books/<%= foundBook._id %>?_method=PUT" method="POST">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" value="<%= foundBook.title %>">
+
+        <label for="auther">Auther</label>
+        <input type="text" id="auther" name="auther" value="<%= foundBook.auther %>">
+
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status" value="<%= foundBook.status %>">
+
+        <label for="rate">Rate</label>
+        <input type="number" id="rate" name="rate" value="<%= foundBook.rate %>">
+
+        <label for="review">Review</label>
+        <textarea id="review" name="review"><%= foundBook.review %></textarea>
+
+        <button type="submit">Update the book</button>
+    </form>
+</body>
+
+</html>

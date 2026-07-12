@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('./partials/nav') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            justify-items: center;
-        }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        button {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-
-<body>
     <h1>Add a book</h1>
     <form action="/books" method="POST">
         <label for="title">Title</label>
