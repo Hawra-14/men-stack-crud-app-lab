@@ -32,7 +32,7 @@ app.post('/books', async (req, res) => {
     const bookData = {}
 
     bookData.title = req.body.title
-    bookData.auther = req.body.auther
+    bookData.author = req.body.author
     bookData.status = req.body.status
     bookData.rate = req.body.rate
     bookData.review = req.body.review
@@ -73,7 +73,7 @@ app.get('/books/:bookId/edit', async (req, res) => {
 app.put('/books/:bookId', async (req, res) => {
     const bookData = {}
     bookData.title = req.body.title
-    bookData.auther = req.body.auther
+    bookData.author = req.body.author
     bookData.status = req.body.status
     bookData.rate = req.body.rate
     bookData.review = req.body.review
